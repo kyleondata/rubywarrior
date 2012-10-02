@@ -1,20 +1,26 @@
-Level 4
+Level 7
 
-You can hear bow strings being stretched.
+You feel a wall right in front of you and an opening behind you.
 
-Tip: No new abilities this time, but you must be careful not to rest while taking damage. Save a @health instance variable and compare it on each turn to see if you're taking damage.
+Tip: You are not as effective at attacking backward. Use warrior.feel.wall? and warrior.pivot! to turn around.
 
- -------
-|@ Sa S>|
- -------
+ ------
+|>a S @|
+ ------
 
   > = Stairs
   @ = Kyle (20 HP)
-  S = Thick Sludge (24 HP)
   a = Archer (7 HP)
+  S = Thick Sludge (24 HP)
 
 
 Warrior Abilities:
+
+  warrior.pivot!
+    Rotate :left, :right or :backward (default)
+
+  warrior.rescue!
+    Rescue a captive from his chains (earning 20 points) in given direction (forward by default).
 
   warrior.health
     Returns an integer representing your health.
